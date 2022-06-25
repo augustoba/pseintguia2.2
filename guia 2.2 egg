@@ -1,5 +1,5 @@
 //////////////////////////////guia 2.2////////////////////////
-
+//////////////////////Bucle "Mientras"/////////////////
 ///1. Escriba un programa que valide si una nota está entre 0 y 10, sino está entre 0 y 10 la nota
 ////		se pedirá de nuevo hasta que la nota sea correcta.
 
@@ -113,15 +113,53 @@
 ////programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
 ////todos ellos
 
+//
+//Proceso ejercicio5
+//	definir num , nummax , nummin , aux1 ,aux2 , total1 , total2 Como Entero 
+//	
+//	Escribir "ingrese un numero entero, ingrese 0 para finalizar"
+//	Leer num
+//	aux1= 1
+//	aux2=1
+//	nummax= num
+//	nummin= num
+//	total1=num
+//	total2=num
+//	
+//	hacer 	
+//		
+//		si	num > nummax y num  <>0  Entonces
+//			
+//			nummax= num
+//			numin=num
+//			aux1=aux1+1
+//			total1=total1+num
+//		FinSi
+//		
+//		si num < nummin y num  <>0 Entonces
+//			nummin = num
+//			aux2=aux2+2
+//			total2=total2+num
+//		FinSi
+//		Escribir "ingrese un numero entero, ingrese 0 para finalizar"
+//		Leer num
+//	mientras que num  <> 0 
+//	Escribir "el máximo número ingresado es : ", nummax ,"(el promedio es : ", total1/aux1,")"
+//	
+//	Escribir "el minimo número ingresado es : ", nummin, "(el promedio es : ", total2/aux2,")"
+//FinProceso
 
-Proceso ejercicio5
-	
-	
-FinProceso
 
+//////////////////////////Bucle "Para"///////////////////////////////////////
+////6. Escribir un programa que calcule el cuadrado de los 9 primeros números naturales e
+////imprima por pantalla el número seguido de su cuadrado. Ejemplo: "2 elevado al cuadrado
+////	es igual a 4", y así sucesivamente
 
-
-
+//Proceso ejercicio6
+//	Para variable_numerica<-valor_inicial Hasta valor_final Con Paso paso Hacer
+//		secuencia_de_acciones
+//	Fin Para
+//FinProceso
 
 
 ///////////////////////extras///////////////////////////////////////////
@@ -131,6 +169,17 @@ FinProceso
 ////1. Escriba un programa en el cual se ingrese un número y mientras ese número sea mayor
 ////	de 10, se pedirá el número de nuevo.
 
+//Proceso ejercicio1
+//	
+//	definir num Como Entero
+//	Escribir "ingrese un numero"
+//	Leer num
+//	
+//	Mientras num  > 10 Hacer
+//		Escribir "ingrese un numero"
+//		Leer nota
+//	Fin Mientras
+//FinProceso
 
 
 
