@@ -1,4 +1,6 @@
 //////////////////////////////guia 2.2////////////////////////
+
+
 //////////////////////Bucle "Mientras"/////////////////
 ///1. Escriba un programa que valide si una nota está entre 0 y 10, sino está entre 0 y 10 la nota
 ////		se pedirá de nuevo hasta que la nota sea correcta.
@@ -50,6 +52,7 @@
 
 
 //Proceso ejercicio3
+
 //	definir num, aux,total,asd Como Entero
 //	
 //	Escribir "ingrese un numero, ingrese -1 para finalizar"
@@ -72,6 +75,8 @@
 
 
 ////				Bucle "Hacer - Mientras Que"
+
+
 ////4. Teniendo en cuenta que la clave es "eureka", escribir un programa que nos pida ingresar
 ////una clave. Sólo se cuenta con 3 intentos para acertar, si fallamos los 3 intentos se deberá
 ////		mostrar un mensaje indicándonos que hemos agotado esos 3 intentos. Si acertamos la
@@ -82,6 +87,7 @@
 
 
 //proceso ejercicio4
+
 //	definir clave Como Caracter
 //	Definir aux Como Entero
 //	
@@ -113,8 +119,9 @@
 ////programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
 ////todos ellos
 
-//
+
 //Proceso ejercicio5
+
 //	definir num , nummax , nummin , aux1 ,aux2 , total1 , total2 Como Entero 
 //	
 //	Escribir "ingrese un numero entero, ingrese 0 para finalizar"
@@ -151,18 +158,59 @@
 
 
 //////////////////////////Bucle "Para"///////////////////////////////////////
+
+
 ////6. Escribir un programa que calcule el cuadrado de los 9 primeros números naturales e
 ////imprima por pantalla el número seguido de su cuadrado. Ejemplo: "2 elevado al cuadrado
 ////	es igual a 4", y así sucesivamente
 
+
+
 //Proceso ejercicio6
-//	Para variable_numerica<-valor_inicial Hasta valor_final Con Paso paso Hacer
-//		secuencia_de_acciones
+//	
+//	Para i<-1 Hasta 9 Con Paso 1 Hacer
+//		
+//		Escribir  "el cuadradado de " i " es " i * i
+//		
 //	Fin Para
 //FinProceso
 
+////
+////7. Realizar un programa que pida una frase y el programa deberá mostrar la frase con un
+////espacio entre cada letra. La frase se mostrará así: H o l a. Nota: recordar el funcionamiento
+////		de la función Subcadena().
+////	NOTA:. En PseInt, si queremos escribir sin que haya saltos de línea, al final de la operación
+////		"escribir" escribimos "sin saltar". Por ejemplo:
+////			Escribir sin saltar "Hola, "
+////			Escribir sin saltar "cómo estás?"
+////		Imprimirá por pantalla: Hola, cómo estás?
+
+
+Proceso ejercicio7
+	
+	Definir frase,aux Como Caracter
+	definir long,i Como Entero
+	
+	Escribir "ingrese una frase"
+	Leer frase
+	i=0
+	long=longitud (frase)	
+	
+	Para i<-0 Hasta long-1 Con Paso 1 Hacer
+		
+		aux = Subcadena(frase,i,i)
+		Escribir Sin Saltar aux " "
+		
+	Fin Para
+	
+	
+FinProceso
+
+
+
 
 ///////////////////////extras///////////////////////////////////////////
+
 
 ////////////////Bucle "Mientras"///////////////
 
