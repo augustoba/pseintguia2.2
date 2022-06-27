@@ -1,0 +1,219 @@
+/////////////////////////extras///////////////////////////////////////////
+////////////////Bucle "Mientras"///////////////
+
+////1. Escriba un programa en el cual se ingrese un número y mientras ese número sea mayor
+////	de 10, se pedirá el número de nuevo.
+
+//Proceso ejercicio1
+//	
+//	definir num Como Entero
+//	Escribir "ingrese un numero"
+//	Leer num
+//	
+//	Mientras num  > 10 Hacer
+//		Escribir "ingrese un numero"
+//		Leer nota
+//	Fin Mientras
+//FinProceso
+
+
+
+////2. Escriba un programa que solicite dos números enteros (mínimo y máximo). A continuación,
+////se debe pedir al usuario que ingrese números enteros situados entre el máximo y mínimo.
+////Cada vez que un número se encuentre entre ese intervalo, se sumara uno a una variable.
+////El programa terminará cuando se escriba un número que no pertenezca a ese intervalo, y
+////al finalizar se debe mostrar por pantalla la cantidad de números ingresados dentro del
+////intervalo. 
+
+//Proceso ejercicio2
+
+//	definir minimo,maximo, aux ,num Como Entero
+//	escribir "ingrese el numero minimo y maximo"
+//	Leer minimo, maximo
+//	Escribir "ingrese un numero entero entre el minimo y maximo"
+//	Leer num
+//	
+//	Mientras num >= minimo  y num <= maximo Hacer
+//		Escribir "ingrese un numero entero entre el minimo y maximo"
+//		Leer num
+//		aux= aux+1
+//	Fin Mientras
+//		escribir "se escribieron " aux " numeros "
+//	
+//FinProceso
+
+
+////3. Escriba un programa que solicite al usuario números decimales mientras que el usuario
+////escriba números mayores al primero que se ingresó. Por ejemplo: si el usuario ingresa
+////		como primer número un 3.1, y luego ingresa un 4, el programa debe solicitar un tercer
+////		número. El programa continuará solicitando valores sucesivamente mientras los valores
+////			ingresados sean mayores que 3.1, caso contrario, el programa finaliza.
+
+
+//proceso ejercicio3
+
+//	definir num, aux Como Real
+//	Escribir "ingrese un numero decimal"
+//	Leer num
+//	
+//	aux= 0
+//	
+//	Mientras num > aux Hacer
+//		aux= num
+//		Escribir "ingrese un numero decimal"
+//		Leer num
+//	Fin Mientras
+//	
+//	FinProceso
+
+////4. Calcular las calificaciones de un grupo de alumnos. La nota final de cada alumno se
+////calcula según el siguiente criterio: la parte práctica vale el 10%; la parte de problemas vale
+////	el 50% y la parte teórica el 40%. El programa leerá el nombre del alumno, las tres notas
+////	obtenidas, mostrará el resultado por pantalla, y a continuación volverá a pedir los datos del
+////	siguiente alumno hasta que el nombre sea una cadena vacía. Las notas deben estar
+////	comprendidas entre 0 y 10, y si no están dentro de ese rango no se imprimirá el promedio
+////		y se mostrará un mensaje de error
+
+//Proceso ejercicio4
+//	
+//	Definir nombre Como Caracter
+//	Definir notapractica, notaproblema,notateorica Como Real
+//	
+//	Hacer
+//		
+//	Mientras Que  
+//	
+//	
+//FinProceso
+
+
+////5. Escribir un programa que calcule cuántos dígitos tiene un número entero positivo sin
+////convertirlo a cadena (pista: se puede hacer dividiendo varias veces entre 10). Nota:
+////		investigar la función trunc().
+
+
+//proceso ejercicio5
+//	definir num,aux ,aux2 Como Entero
+//	Escribir "ingrese un numero"
+//	Leer num
+//	aux2=num
+//	Mientras aux2 <>0	 Hacer
+//		
+//		aux2 = trunc(aux2/10)
+//		aux= aux+1
+//		
+//		
+//	FinMientras
+//	Escribir "el numero ingresado " num ," tiene ", aux," digitos"
+//	
+//	
+//FinProceso
+
+//////////////////////Bucle "Hacer - Mientras Que"//////////////////////////////////
+
+////6. Realizar un programa que solicite al usuario su código de usuario (un número entero
+////mayor que cero) y su contraseña numérica (otro número entero positivo). El programa no
+////le debe permitir continuar hasta que introduzca como código 1024 y como contraseña
+////4567. El programa finaliza cuando ingresa los datos correctos.
+
+//Proceso ejercicio6
+//	
+//FinProceso
+////7. Se debe realizar un programa que:
+////1º) Pida por teclado un número (entero positivo).
+////2º) Pregunte al usuario si desea introducir o no otro número.
+////3º) Repita los pasos 1º y 2º mientras que el usuario no responda n/N (no).
+////4º) Muestre por pantalla la suma de los números introducidos por el usuario.
+
+//Proceso ejercicio7
+//	
+//FinProceso
+
+////8. Hacer un algoritmo para calcular la media de los números pares e impares, sólo se
+////	ingresará diez números.
+//
+//Proceso ejercicio8
+//	
+//FinProceso
+
+
+////9. Se pide escribir un programa que calcule la suma de los N primeros números pares. Es
+////decir, si ingresamos el número 5 como valor de N, el algoritmo nos debe realizar la suma
+////de los siguientes valores: 2+4+6+8+10.
+//
+//proceso ejercicio9
+//	
+//FinProceso
+
+////10. Programar un juego donde la computadora elige un número al azar entre 1 y 10, y a
+////continuación el jugador tiene que adivinarlo. La estructura del programa es la siguiente:
+////1º) El programa elige al azar un número n entre 1 y 10.
+////2º) El usuario ingresa un número x.
+////3º) Si x no es el número exacto, el programa indica si n es más grande o más pequeño que
+////el número ingresado.
+////4º) Repetimos desde 2) hasta que x sea igual a n.
+////El programa tiene que imprimir los mensajes adecuados para informarle al usuario qué
+////hacer y qué pasó hasta que adivine el número.
+////NOTA: Para generar un número aleatorio entre 1 y 10 se puede utilizar la función
+////Aleatorio(limite_inferior, limite_superior) de PseInt.
+
+//Proceso ejercicio10
+//	
+//FinProceso
+
+//////////////////////////////Bucle "Para"/////////////////////////////////////
+
+
+
+////11. Realizar un programa que muestre la cantidad de números que son múltiplos de 2 o de 3
+////comprendidos entre 1 y 100.
+
+//Proceso ejercicio11
+//	
+//FinProceso
+
+
+////12. Escribir un programa que calcule la suma de los N primeros números naturales. El valor de
+////N se leerá por teclado.
+
+//Proceso ejercicio12
+//	
+//FinProceso
+
+////13. Siguiendo el ejercicio 20 de los ejercicios principales, ahora deberemos hacer lo mismo
+////pero que la cadena se muestre al revés. Por ejemplo, si tenemos la cadena: Hola,
+////deberemos mostrar a l o H.
+
+//Proceso ejercicio13
+//	
+//FinProceso
+
+////////////////////////////////////Bucles Anidados///////////////////////////////
+////14. Escriba un programa que lea un número entero (altura) y a partir de él cree una escalera
+////invertida de asteriscos con esa altura. Por ejemplo, si ingresamos una altura de 5 se
+////deberá mostrar:
+////			*****
+////			****
+////			***
+////			**
+////			*
+
+//Proceso ejercicio14
+//	
+//FinProceso
+
+
+////15. La función factorial se aplica a números enteros positivos. El factorial de un número entero
+////positivo (!n) es igual al producto de los enteros positivos desde 1 hasta n:
+////n! = 1 * 2 * 3 * 4 * 5 * (n-1) * n
+////Escriba un programa que calcule las factoriales de todos los números enteros desde el 1
+////hasta el 5. El programa deberá mostrar la siguiente salida:
+////!1 = 1
+////!2 = 1*2 = 2
+////...
+////!5 = 1*2*3*4*5 = 120
+
+//Proceso ejercicio15
+//	
+//FinProceso
+	
