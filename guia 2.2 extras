@@ -117,8 +117,19 @@
 ////4567. El programa finaliza cuando ingresa los datos correctos.
 
 //Proceso ejercicio6
-//	
+//	definir codigo, contrasenia Como Entero
+//	codigo=0
+//	contrasenia=0
+//	hacer	
+//		Escribir "ingrese su codigo de usuario y contrasenia"
+//		Leer codigo, contrasenia
+//		
+//		
+//	Mientras Que codigo <>1024 y contrasenia <>4567
+//		
+//	Escribir "los datos son correctos"
 //FinProceso
+
 ////7. Se debe realizar un programa que:
 ////1º) Pida por teclado un número (entero positivo).
 ////2º) Pregunte al usuario si desea introducir o no otro número.
@@ -126,15 +137,57 @@
 ////4º) Muestre por pantalla la suma de los números introducidos por el usuario.
 
 //Proceso ejercicio7
+//	definir num, aux Como Entero
+//	Definir opc Como Caracter
+//	
+//	aux=0
+//	opc=""
+//	
+//	hacer	
+//		Escribir "ingrese un numero"
+//		Leer num
+//		aux= aux+num
+//		Escribir "desea introducior otro numero?  presione n para salir"
+//		leer opc
+//		
+//	Mientras Que (opc<>"n") y (opc<>"N")
+//	
+//	Escribir "la suma total de los numeros ingresados es: " aux
 //	
 //FinProceso
 
 ////8. Hacer un algoritmo para calcular la media de los números pares e impares, sólo se
 ////	ingresará diez números.
-//
-//Proceso ejercicio8
+
+//Algoritmo ejercicio8
 //	
-//FinProceso
+//	Definir num, aux1,aux2,cont1,cont2,cont3 Como Entero
+//	
+//	cont1=0
+//	cont2=0
+//	cont3=0
+//	aux1=0
+//	aux2=0
+//	
+//	hacer	
+//		Escribir "ingrese un numero"
+//		Leer num
+//		
+//		si	num%2=0 Entonces
+//			aux1=aux1+num
+//			cont1=cont1+1
+//			
+//		SiNo
+//			aux2=aux2+num
+//			cont2=cont2+1
+//		FinSi
+//		cont3=cont3+1
+//		Mientras Que cont3 <10
+//	
+//		Escribir "la media de los numeros pares es : " aux1/cont1
+//		Escribir "la media de los numeros imapres es : " aux2/cont2
+//	
+//FinAlgoritmo
 
 
 ////9. Se pide escribir un programa que calcule la suma de los N primeros números pares. Es

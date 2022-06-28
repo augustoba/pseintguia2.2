@@ -119,9 +119,9 @@
 ////programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
 ////todos ellos
 
-
+//
 //Proceso ejercicio5
-
+//	
 //	definir num , nummax , nummin , aux1 ,aux2 , total1 , total2 Como Entero 
 //	
 //	Escribir "ingrese un numero entero, ingrese 0 para finalizar"
@@ -154,6 +154,7 @@
 //	Escribir "el máximo número ingresado es : ", nummax ,"(el promedio es : ", total1/aux1,")"
 //	
 //	Escribir "el minimo número ingresado es : ", nummin, "(el promedio es : ", total2/aux2,")"
+
 //FinProceso
 
 
