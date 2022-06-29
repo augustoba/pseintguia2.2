@@ -195,6 +195,25 @@
 ////de los siguientes valores: 2+4+6+8+10.
 //
 //proceso ejercicio9
+//	definir num, aux,contador,aux2 Como Entero
+//	
+//	
+//	num=0
+//	aux=0
+//	aux2=0
+//	
+//	Escribir "ingrese la cantidad de numeros pares que quiere"
+//	leer aux
+//	Hacer
+//			
+//		num=num+2
+//		aux2=aux2+num
+//	contador=contador+1
+//	
+//	mientras Que contador<>5 
+//	
+//	Escribir aux2	
+//	
 //	
 //FinProceso
 
@@ -211,6 +230,33 @@
 ////Aleatorio(limite_inferior, limite_superior) de PseInt.
 
 //Proceso ejercicio10
+//	Definir n, numaleatorio Como Entero
+//	
+//	numaleatorio = azar (10)+1
+//	n=0
+//	Escribir  numaleatorio
+//	Hacer
+//		
+//		Escribir "ingrese un numero entre 1 y 10"
+//		leer n
+//		
+//		Si n >numaleatorio Entonces
+//			Escribir "es mayor al numero"
+//		SiNo
+//			si	n <numaleatorio Entonces
+//				Escribir "es menor al numero"
+//				
+//			SiNo
+//				
+//		Fin Si
+//	Fin Si
+//		Mientras  Que n <>numaleatorio
+//			
+//		
+//		
+//	
+//	Escribir "usted adivino el numero es : " numaleatorio
+//	
 //	
 //FinProceso
 
@@ -222,7 +268,27 @@
 ////comprendidos entre 1 y 100.
 
 //Proceso ejercicio11
+//	Definir num Como Entero
 //	
+//	aux1=0
+//	aux2=0
+//	
+//	Para i<-1 Hasta 100 Con Paso 1 paso Hacer
+//		
+//		si i mod 2 =0
+//			
+//			aux1=aux1+1
+//		
+//		SiNo
+//			si i mod 3=0
+//				aux2=aux2+1
+//			SiNo
+//				
+//			FinSi
+//		FinSi
+//	Fin Para
+//	Escribir  "son : " aux1 " numeros pares"
+//	Escribir "son : " aux2 " numeros impares""
 //FinProceso
 
 
@@ -230,7 +296,17 @@
 ////N se leerá por teclado.
 
 //Proceso ejercicio12
+//	definir n , total,i como entero
 //	
+//	Escribir "ingrese la cantidad de numeros a sumar"
+//	leer n
+//	
+//	total=0
+//		
+//	Para i<-0 Hasta n-1 Con Paso 1 paso Hacer
+//		total=total+i
+//	Fin Para
+//	Escribir total
 //FinProceso
 
 ////13. Siguiendo el ejercicio 20 de los ejercicios principales, ahora deberemos hacer lo mismo
@@ -239,20 +315,48 @@
 
 //Proceso ejercicio13
 //	
+//	Definir frase,aux Como Caracter
+//	definir long Como Entero
+//	
+//	Escribir "ingrese una frase"
+//	Leer frase
+//	
+//	long=longitud (frase)	
+//	
+//	Para i<-long-1 Hasta 0 Con Paso -1 Hacer
+//		
+//		aux = Subcadena(frase,i,i)
+//		Escribir Sin Saltar aux " "
+//		
+//	Fin Para
+//	
+//	
+//	
 //FinProceso
 
 ////////////////////////////////////Bucles Anidados///////////////////////////////
 ////14. Escriba un programa que lea un número entero (altura) y a partir de él cree una escalera
 ////invertida de asteriscos con esa altura. Por ejemplo, si ingresamos una altura de 5 se
 ////deberá mostrar:
-////			*****
-////			****
-////			***
-////			**
-////			*
+////*****
+////****
+////***
+////**
+////*
 
 //Proceso ejercicio14
+//	definir num Como Entero
+//	Escribir "ingrese un numero"
+//	leer num
 //	
+//	Para i=1 Hasta num Con Paso 1 paso Hacer
+//		Para j=1 Hasta i Con Paso 1 paso Hacer
+//			
+//			Escribir Sin Saltar"*" " "
+//		Fin Para
+//		
+//		Escribir ""
+//	Fin Para
 //FinProceso
 
 
