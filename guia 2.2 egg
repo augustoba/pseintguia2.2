@@ -52,25 +52,25 @@
 
 
 //Proceso ejercicio3
-
-//	definir num, aux,total,asd Como Entero
+//	
+//	definir num, aux,total Como real
 //	
 //	Escribir "ingrese un numero, ingrese -1 para finalizar"
 //	Leer num
 //	aux=0
+//	total=0
 //	
-//		
 //	Mientras num  <>  -1  Hacer
-//	
-//	total= total+num
-//	aux= aux+1
-//	Escribir "ingrese un numero, ingrese -1 para finalizar"
-//	Leer num
-//	Fin Mientras
-//		Escribir "el promedio es: " total/aux
 //		
+//		total= total+num
+//		aux= aux+1
+//		Escribir "ingrese un numero, ingrese -1 para finalizar"
+//		Leer num
+//	Fin Mientras
+//	Escribir "el promedio es: " total/aux
+//	
 //FinProceso
-//
+
 
 
 
@@ -87,18 +87,21 @@
 
 
 //proceso ejercicio4
-
+//	
 //	definir clave Como Caracter
 //	Definir aux Como Entero
 //	
 //	aux=0
 //	
-//	hacer 	
+//	hacer 
+//		
+//		
 //		Escribir "ingrese la clave"
 //		Leer clave
 //		
 //		aux=aux+1
 //		
+//		Escribir "numeros de intentos restantes" 3- aux
 //	mientras que clave  <>"eureka" y aux<3
 //	
 //	si clave = "eureka" y aux <3
@@ -119,10 +122,10 @@
 ////programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
 ////todos ellos
 
-//
+
 //Proceso ejercicio5
 //	
-//	definir num , nummax , nummin , aux1 ,aux2 , total1 , total2 Como Entero 
+//	definir num , nummax , nummin , aux1 ,aux2 , total1 , total2 Como real 
 //	
 //	Escribir "ingrese un numero entero, ingrese 0 para finalizar"
 //	Leer num
@@ -154,7 +157,7 @@
 //	Escribir "el máximo número ingresado es : ", nummax ,"(el promedio es : ", total1/aux1,")"
 //	
 //	Escribir "el minimo número ingresado es : ", nummin, "(el promedio es : ", total2/aux2,")"
-
+//	
 //FinProceso
 
 
@@ -186,7 +189,7 @@
 ////			Escribir sin saltar "cómo estás?"
 ////		Imprimirá por pantalla: Hola, cómo estás?
 
-//
+
 //Proceso ejercicio7
 //	
 //	Definir frase,aux Como Caracter
@@ -194,7 +197,7 @@
 //	
 //	Escribir "ingrese una frase"
 //	Leer frase
-//
+//	
 //	long=longitud (frase)	
 //	
 //	Para i<-0 Hasta long-1 Con Paso 1 Hacer
@@ -224,7 +227,70 @@
 
 //Proceso ejercicio8
 //	
-//FinProceso
+//		
+//		
+//		definir cantAlumnos,notafinal ,parcialEntre4y7, contadorParcialEntre, notamayorexposicion, sumaAlumnosAprobaronTpi, porcentajeMayor, cantidadReprobados, contador,tpi,exposicion,parcial,promedioreprobados, sumareprobados, notamaxima ,i como real
+//		
+//		Escribir "cantidad de alumnos"
+//		leer cantAlumnos
+//		
+//		cantidadReprobados=0
+//		sumareprobados=0
+//		promedioreprobados=0
+//		porcentajeMayor=0
+//		sumaAlumnosAprobaronTpi=0
+//		notamayorexposicion=0
+//		parcialEntre4y7=0
+//		contadorParcialEntre=0
+//		
+//		Para i<-1 Hasta cantAlumnos Con Paso 1 Hacer
+//			
+//			Escribir "ingrese tpi del alumno " i
+//			leer tpi
+//			Escribir "ingrese tp expo del alumno " i
+//			leer exposicion
+//			Escribir "ingrese nota de parcial del alumno " i
+//			leer parcial
+//			
+//			notafinal= 0.35* tpi + 0.25* exposicion + 0.4*parcial
+//			
+//			si notafinal <6.5 Entonces
+//				
+//				cantidadReprobados=cantidadReprobados+1
+//				sumareprobados=sumareprobados+notafinal
+//				
+//			FinSi
+//			
+//			si tpi >7.5 Entonces
+//				
+//				porcentajeMayor= porcentajeMayor +1
+//				
+//			FinSi
+//			
+//			
+//			si exposicion > notamayorexposicion Entonces
+//				notamayorexposicion = exposicion
+//			FinSi
+//			
+//			si parcial>=4 y parcial <=7.5 entonces 
+//				contadorParcialEntre= contadorParcialEntre+1
+//				
+//			FinSi
+//			
+//			
+//		Fin Para
+//		
+//		promedioreprobados= sumareprobados/cantidadReprobados
+//		sumaAlumnosAprobaronTpi= (porcentajeMayor/cantAlumnos)*100
+//		
+//		Escribir " el promedio final de la nota de los alumnos reprobados es " promedioreprobados
+//		Escribir "el porcentaje de notas de tpi mayor a 7,5 es " sumaAlumnosAprobaronTpi " % "
+//		Escribir "la nota mayor de la exposicion es " notamayorexposicion
+//		Escribir " la cantidad de alumnos entre 4 y 7,5 en el PARCIAL son " contadorParcialEntre
+//		
+//FinAlgoritmo
+
+
 
 //////////////////////////////////////Bucles Anidados /////////////////////////////////////
 
@@ -232,23 +298,24 @@
 ////9. Realizar un programa que lea un número entero (tamaño del lado) y a partir de él cree un
 ////cuadrado de asteriscos de ese tamaño. Los asteriscos sólo se verán en el borde del
 ////cuadrado, no en el interior. Por ejemplo, si se ingresa el número 4 se debe mostrar:
+////
 ////		* * * *		
 ////		*     *
 ////		*     *
 ////		* * * *
 ////	Nota: Recordar el uso del escribir sin saltar en PseInt.
 
-//
-//Proceso ejercicio9
 
+//Proceso ejercicio9
+//	
 //	Definir num ,i,j Como Entero
 //	
 //	Escribir "ingrese un numero"
 //	Leer num
 //	i=0
 //	j=0
-//	k=0
-//		
+//	
+//	
 //	Para i<-1 Hasta num Con Paso 1 Hacer
 //		
 //		Para j<-1 Hasta num Con Paso 1 Hacer
@@ -260,7 +327,7 @@
 //				Escribir "* " Sin Saltar
 //				
 //			FinSi
-//			Fin Para
+//		Fin Para
 //		Escribir ""
 //	FinPara
 //	
@@ -274,14 +341,31 @@
 ////compañía desea saber, por un lado, cuánto dinero deberá pagar en la semana a cada
 ////vendedor por concepto de comisiones de las ventas realizadas, y por otro lado, cuánto
 ////deberá pagar a cada vendedor como sueldo total (sueldo base + comisiones). Para cada
-////	vendedor ingresar cuanto es su sueldo base, cuantas ventas realizó y cuanto cobró por
+////vendedor ingresar cuanto es su sueldo base, cuantas ventas realizó y cuanto cobró por
 ////cada venta.
-
+//
 //proceso ejercicio10
 //	
+//	Definir vendedores, ventas Como Entero
+//	Escribir "ingrese cantidad de vendedores"
+//	leer vendedores 
+//	Escribir "ingrese cantidad de ventas"
+//	leer j
+//	
+//	Para i<-1 Hasta vendedores Con Paso 1  Hacer
+//		
+//		Escribir "ingrese cantidad de ventas"
+//		leer j
+//		
+//		
+//		
+//	Fin Para
+//	
+//	
+//	
 //FinProceso
-
-
+//
+//
 
 
 

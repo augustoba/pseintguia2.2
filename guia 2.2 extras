@@ -26,20 +26,21 @@
 ////intervalo. 
 
 //Proceso ejercicio2
-
+	
 //	definir minimo,maximo, aux ,num Como Entero
 //	escribir "ingrese el numero minimo y maximo"
 //	Leer minimo, maximo
 //	Escribir "ingrese un numero entero entre el minimo y maximo"
 //	Leer num
+//	aux=0
 //	
 //	Mientras num >= minimo  y num <= maximo Hacer
 //		Escribir "ingrese un numero entero entre el minimo y maximo"
 //		Leer num
 //		aux= aux+1
 //	Fin Mientras
-//		escribir "se escribieron " aux " numeros "
-//	
+//	escribir "se escribieron " aux " numeros "
+	
 //FinProceso
 
 
@@ -74,17 +75,45 @@
 ////	comprendidas entre 0 y 10, y si no están dentro de ese rango no se imprimirá el promedio
 ////		y se mostrará un mensaje de error
 
-//Proceso ejercicio4
+//proceso ejercicio4
 //	
-//	Definir nombre Como Caracter
-//	Definir notapractica, notaproblema,notateorica Como Real
 //	
-//	Hacer
+//	Definir  notafinal,notapractica,notaproblema, notateoria, promedio Como Real
+//	definir nombre como caracter
+//	
+//	
+//	Escribir "ingresar nombre de alumno"
+//	leer nombre
+//	mientras nombre<> "" Hacer
 //		
-//	Mientras Que  
-//	
+//		
+//		Escribir" ingresar notapractica"
+//		leer notapractica 
+//		Escribir "ingresar nota problema"
+//		leer notaproblema
+//		Escribir "ingresar nota teorica"
+//		leer notateoria
+//		
+//		
+//		si notapractica>=0 y notapractica<=10 y notaproblema>=0 y notaproblema<=10 y notateoria>=0 y notateoria<=10 	Entonces
+//			
+//			notafinal= (notapractica *0.1)+(notaproblema* 0.5)+ (notateoria* 0.4)
+//			escribir "la nota final de " nombre " es: " notafinal
+//			
+//			
+//		SiNo
+//			Escribir "las notas no se encuentran en el rango entre 0 y 10"
+//			
+//		FinSi
+//		
+//		Escribir "ingresar nombre del siguiente alumno"
+//		leer nombre
+//		
+//	FinMientras
 //	
 //FinProceso
+
+
 
 
 ////5. Escribir un programa que calcule cuántos dígitos tiene un número entero positivo sin
