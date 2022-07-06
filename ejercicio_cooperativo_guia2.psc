@@ -14,7 +14,7 @@ Proceso ejercicio_cooperativo_guia2
 	
 	Escribir"ingrese su usuario"
 	leer usuario
-	
+	//usuario="Albus_D"
 	Mientras usuario <> "Albus_D" Hacer
 		
 		Escribir "!!usuario incorrecto!!"
@@ -26,7 +26,7 @@ Proceso ejercicio_cooperativo_guia2
 		Escribir "********ingrese su contraseña******"
 		Leer Contrasenia
 		
-		
+		//Contrasenia="caramelosDeLimon"
 	si Contrasenia == "caramelosDeLimon" Entonces
 		
 		Login= Verdadero
@@ -83,23 +83,28 @@ Proceso ejercicio_cooperativo_guia2
 						pesoaleatorio=azar(2900)+100
 						
 						si	pesoaleatorio<500 Entonces
-							
 							total=total+50
+							Escribir "el peso de la botella n°" i " es : " pesoaleatorio " y el valor es: " 50
 						SiNo
+							
+						
+						
 							si pesoaleatorio>= 501 y pesoaleatorio <=1500 Entonces
 								total = total +125
+								Escribir "el peso de la botella n°" i " es : " pesoaleatorio " y el valor es: " 125
+							
 							SiNo
+								
 								si	pesoaleatorio >1501 Entonces
 									total = total +200
-									
-								FinSi
-							FinSi
-							
+									Escribir "el peso de la botella n°" i " es : " pesoaleatorio " y el valor es: " 200
+				
 						FinSi
-						
+					FinSi
+				FinSi
 					Fin Para
 					
-					Escribir "el valor es: " total
+					Escribir "el valor de las botellas es de : " total
 					Escribir "si acepta ingrese 1, si no presione cualquier numero"
 					Leer opc1
 					
